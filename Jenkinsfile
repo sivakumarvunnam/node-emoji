@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Initialize ') {
+    stage('CheckOut') {
       steps {
-        tool 'Node'
+        git(url: 'https://github.com/sivakumarvunnam/node-emoji.git', branch: 'master')
       }
     }
   }
