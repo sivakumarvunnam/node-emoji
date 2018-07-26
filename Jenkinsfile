@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Initialize ') {
       steps {
-        sh '''curl https://raw.githubusercontent.com/isaacs/nave/master/nave.sh | sudo bash -s -- usemain lts
+        sh '''"curl https://raw.githubusercontent.com/isaacs/nave/master/nave.sh | sudo bash -s -- usemain lts"
 node -v
 npm -v
 npm install '''
